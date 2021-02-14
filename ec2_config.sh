@@ -41,5 +41,5 @@ sudo Rscript -e 'install.packages("pacman", repos="https://cloud.r-project.org")
 sudo Rscript -e 'pacman::p_load(shiny, tidyverse, leaflet, viridis, shinythemes, ggthemes, leaflet, DT)'
 
 #install rshiny server
-sudo wget https://download3.rstudio.org/ubuntu-14.04/x86_64/shiny-server-1.5.16.958-amd64.deb
-sudo gdebi shiny-server-1.5.16.958-amd64.deb
+wget https://download3.rstudio.org/centos7/x86_64/shiny-server-1.5.16.958-x86_64.rpm
+sudo yum install --nogpgcheck shiny-server-1.5.16.958-x86_64.rpm
