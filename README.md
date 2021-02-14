@@ -15,6 +15,11 @@ Shinyserver requires linux to run so you need to select a linux AMI. Select the 
 
 ![](https://github.com/lina2497/ec2_shiny_server/blob/main/images/AMI.png)
 
+Select the T2 micro instance type as it is eligible for the Free Tier.
+
+![](https://github.com/lina2497/ec2_shiny_server/blob/main/images/T2.png)
+
+
 
 #Create an EC2 instance with Amazon Linux 2 with internet access
 #Connect to your instance using putty
