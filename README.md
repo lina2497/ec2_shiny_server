@@ -1,7 +1,7 @@
 # ec2_shiny_server
 Instructions to configure an EC2 instance running amazon linux to host shiny apps
 
-![](images\EC2.png)
+![](https://github.com/lina2497/ec2_shiny_server/blob/main/images/EC2.png)
 
 #Create an EC2 instance with Amazon Linux 2 with internet access
 #Connect to your instance using putty
