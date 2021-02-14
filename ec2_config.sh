@@ -20,7 +20,7 @@ sudo wget https://download2.rstudio.org/server/centos7/x86_64/rstudio-server-rhe
 sudo yum install rstudio-server-rhel-1.4.1103-x86_64.rpm
 
 #install r package dependencies
-sudo yum install udunits2-devel openssl-devel libxml2-devel libcurl-devel
+sudo yum install udunits2-devel openssl-devel libxml2-devel libcurl-devel 
 
 # install gdal (useful if you're using r package sf)
 sudo yum -y install make automake gcc gcc-c++ libcurl-devel proj-devel geos-devel proj-nad proj-epsg
@@ -41,5 +41,10 @@ sudo Rscript -e 'install.packages("pacman", repos="https://cloud.r-project.org")
 sudo Rscript -e 'pacman::p_load(shiny, tidyverse, leaflet, viridis, shinythemes, ggthemes, leaflet, DT)'
 
 #install rshiny server
-wget https://download3.rstudio.org/centos7/x86_64/shiny-server-1.5.16.958-x86_64.rpm
+sudo wget https://download3.rstudio.org/centos7/x86_64/shiny-server-1.5.16.958-x86_64.rpm
 sudo yum install --nogpgcheck shiny-server-1.5.16.958-x86_64.rpm
+
+#add user for rstudio e.g. username: r_user
+sudo useradd r_user
+#set password for r_user
+sudo passwd r_user
