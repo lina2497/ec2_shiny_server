@@ -1,12 +1,12 @@
 # install some basics
 sudo yum -y update
-sudo amazon-linux-extras install R4 python3.8 postgresql11 vim golang1.11 ruby2.6 
+sudo amazon-linux-extras install R4 
 sudo yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 sudo yum-config-manager --enable epel
 
 # Increase virutal memory if using free tier with only 1GM ram
 # https://aws.amazon.com/premiumsupport/knowledge-center/ec2-memory-swap-file/
-sudo dd if=/dev/zero of=/swapfile bs=128M count=32
+sudo dd if=/dev/zero of=/swapfile bs=128M count=16
 sudo chmod 600 /swapfile
 sudo mkswap /swapfile
 sudo swapon /swapfile
