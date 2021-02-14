@@ -20,7 +20,7 @@ sudo wget https://download2.rstudio.org/server/centos7/x86_64/rstudio-server-rhe
 sudo yum install rstudio-server-rhel-1.4.1103-x86_64.rpm
 
 #install r package dependencies
-sudo yum install udunits2-devel openssl-devel libxml2-devel
+sudo yum install udunits2-devel openssl-devel libxml2-devel libcurl-devel
 
 # install gdal (useful if you're using r package sf)
 sudo yum -y install make automake gcc gcc-c++ libcurl-devel proj-devel geos-devel proj-nad proj-epsg
