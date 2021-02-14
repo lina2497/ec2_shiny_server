@@ -15,10 +15,17 @@ Shinyserver requires linux to run so you need to select a linux AMI. Select the 
 
 ![](https://github.com/lina2497/ec2_shiny_server/blob/main/images/AMI.png)
 
-Select the T2 micro instance type as it is eligible for the Free Tier.
+Select the T2 micro instance type as it is eligible for the Free Tier and proceed to configure instance details.
 
 ![](https://github.com/lina2497/ec2_shiny_server/blob/main/images/T2.png)
 
+Accept the defaults for the instance details and proceed to adding storage.
+
+![](https://github.com/lina2497/ec2_shiny_server/blob/main/images/instance_details.png)
+
+You can have up to 30GB in the free tier so increase the storage size to 30GB.
+
+![](https://github.com/lina2497/ec2_shiny_server/blob/main/images/storage.png)
 
 
 #Create an EC2 instance with Amazon Linux 2 with internet access
