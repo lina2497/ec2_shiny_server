@@ -48,3 +48,18 @@ sudo yum install --nogpgcheck shiny-server-1.5.16.958-x86_64.rpm
 sudo useradd r_user
 #set password for r_user
 sudo passwd r_user
+
+# Install git
+sudo yum install git 
+
+# Navigate to shiny server directory
+sudo cd /srv/shiny-server/
+# delete shiny landing page
+sudo rm index.html
+# clone your app in to the folder
+sudo git clone https://github.com/lina2497/NOMIS
+
+
+
+
+
