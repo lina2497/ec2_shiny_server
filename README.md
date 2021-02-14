@@ -27,6 +27,14 @@ You can have up to 30GB in the free tier so increase the storage size to 30GB.
 
 ![](https://github.com/lina2497/ec2_shiny_server/blob/main/images/storage.png)
 
+You do not need to add any tags, you can proceed to the security settings.
+
+![](https://github.com/lina2497/ec2_shiny_server/blob/main/images/storage.png)
+
+Configure your security group like this screenshot. This will open up ports to allow your shiny apps to be visible on the internet and also allow you to access the browser based rstudio server. It will limit who can directly SSH onto the machine to your current IP address.
+
+![](https://github.com/lina2497/ec2_shiny_server/blob/main/images/security.png)
+
 
 #Create an EC2 instance with Amazon Linux 2 with internet access
 #Connect to your instance using putty
