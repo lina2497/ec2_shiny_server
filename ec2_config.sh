@@ -41,8 +41,8 @@ sudo Rscript -e 'install.packages("pacman", repos="https://cloud.r-project.org")
 sudo Rscript -e 'pacman::p_load(shiny, tidyverse, leaflet, viridis, shinythemes, ggthemes, leaflet, DT, shinycssloaders)'
 
 #install rshiny server
-wget https://download2.rstudio.org/server/centos7/x86_64/rstudio-server-rhel-2022.07.0-548-x86_64.rpm
-sudo yum install rstudio-server-rhel-2022.07.0-548-x86_64.rpm
+wget https://download3.rstudio.org/centos7/x86_64/shiny-server-1.5.18.987-x86_64.rpm
+sudo yum install --nogpgcheck shiny-server-1.5.18.987-x86_64.rpm
 
 #add user for rstudio e.g. username: r_user
 #sudo useradd r_user
